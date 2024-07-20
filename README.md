@@ -1,7 +1,8 @@
 # Seret Indexer
 
 Seret Indexer is a Python-based web scraping and search project that fetches movie data
-from [seret.co.il](https://www.seret.co.il) and indexes it into Elasticsearch for offline and efficient searching.
+from [seret.co.il](https://www.seret.co.il) and from [edb.co.il](https://edb.co.il/) and indexes it into Elasticsearch
+for offline and efficient searching.
 
 It uses Github Actions to run the indexer periodically and save the data to Docker images.
 
@@ -11,7 +12,7 @@ The results can be found in the docker image `ghcr.io/tal-sitton/seret-search:la
 
 So all you need to do is run the following command:
 
-```docke
+```docker
 docker network create -d bridge elastic-net
 docker run -p 9200:9200 --network elastic-net ghcr.io/tal-sitton/seret-search:latest
 docker run -p 5601:5601 --network elastic-net docker.elastic.co/kibana/kibana:8.0.0
@@ -54,7 +55,11 @@ and you can access the elastic in port 9200, and the kibana in port 5601.
 
 ### Project Structure
 
-- [`main.py`](main.py): The main script that fetches the sitemap, filters the cached sites, and handles each site.
+- [`seret_main.py`](seret_main.py): The main script that fetches the sitemap, filters the cached sites, and handles each
+  site. for seret.co.il
+- [`edb_main.py`](edb_main.py): The main script that fetches all the movies, filters the cached ones, and handles each
+  site. for edb.co.il
+- [`main.py`](main.py): The main script that runs the seret_main.py and edb_main.py
 - [`db.py`](db.py): Contains the `DB` class for interacting with Elasticsearch.
 - [`movie_model.py`](movie_model.py) and [`site_info_model.py`](site_info_model.py): Pydantic models for Movie and
   SiteInfo data.

@@ -2,6 +2,6 @@ from pydantic import BaseModel
 
 
 class SiteInfoModel(BaseModel):
-    mid: int
+    mid: str
     url: str
     priority: float
