@@ -9,6 +9,8 @@ baseurl: ""
 url: "https://code.sitton.dev/Seret-Indexer"
 author: 
   name: "Tal Sitton"
+plugins:
+  - jekyll-remote-theme
 
 color:
   header: "#000"
