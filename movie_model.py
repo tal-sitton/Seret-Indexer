@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 
 
 class MovieModel(BaseModel):
-    id: int
+    id: str
     url: str
     priority: float
 
