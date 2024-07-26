@@ -1,0 +1,11 @@
+remote_theme: tuur29/pages-themes-cayman
+title: Seret Indexer
+description: "fetch movie data from seret.co.il and from edb.co.il and index it into Elasticsearch"
+markdown: kramdown
+
+color:
+  gradient_left: "#001624"
+  gradient_right: "#00d4ff"
+  
+darkmode: true
+syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
