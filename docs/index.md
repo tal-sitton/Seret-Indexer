@@ -4,10 +4,9 @@
   a:focus,
   a:active {
     text-decoration: none;
-    color: inherit;
+    color: "#009cff";
   }
 </style>
-# Seret Indexer
 
 Seret Indexer is a Python-based web scraping and search project that fetches movie data
 from [seret.co.il](https://www.seret.co.il) and from [edb.co.il](https://edb.co.il/) and indexes it into Elasticsearch
