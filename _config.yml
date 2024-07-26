@@ -3,6 +3,7 @@ description: "fetch movie data from seret.co.il and from edb.co.il and index it 
 remote_theme: tuur29/pages-themes-cayman
 darkmode: true
 hide_first_title: true
+markdown: kramdown
 syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
 baseurl: ""
 url: "https://code.sitton.dev/Seret-Indexer"
