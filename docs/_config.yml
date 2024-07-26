@@ -4,10 +4,8 @@ description: "fetch movie data from seret.co.il and from edb.co.il and index it 
 markdown: kramdown
 
 color:
-  # header: "#000"
   gradient_left: "#001624"
   gradient_right: "#00d4ff"
   
 darkmode: true
-hide_first_title: true
 syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
