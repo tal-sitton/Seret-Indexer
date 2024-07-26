@@ -3,9 +3,9 @@ title: Seret Indexer
 description: "fetch movie data from seret.co.il and from edb.co.il and index it into Elasticsearch"
 markdown: kramdown
 
-plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
+# plugins:
+#   - jekyll-remote-theme
+#   - jekyll-seo-tag
 
 color:
   header: "#000"
@@ -15,12 +15,3 @@ color:
 darkmode: true
 hide_first_title: true
 syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
-
-show_downloads: false
-buttons:
-  zip_url: https://github.com/tal-sitton/Movie-Time/releases/download/v1.0.1/movie-time.apk
-  zip_title: Download The App
-  zip_hide: true
-  tar_title: Download The App
-  tar_url: https://play.google.com/store/apps/details?id=com.talsitton.movietime
-  tar_hide: false
