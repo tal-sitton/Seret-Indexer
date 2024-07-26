@@ -1,3 +1,12 @@
+<style>
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
 # Seret Indexer
 
 Seret Indexer is a Python-based web scraping and search project that fetches movie data
