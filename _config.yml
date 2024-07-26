@@ -1,0 +1,15 @@
+title: "Seret Indexer"
+description: "fetch movie data from seret.co.il and from edb.co.il and index it into Elasticsearch"
+remote_theme: tuur29/pages-themes-cayman
+darkmode: true
+hide_first_title: true
+syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
+baseurl: ""
+url: "https://code.sitton.dev/Seret-Indexer"
+author: 
+  name: "Tal Sitton"
+
+color:
+  header: "#000"
+  gradient_left: "#001624"
+  gradient_right: "#00d4ff"
