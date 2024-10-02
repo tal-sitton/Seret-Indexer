@@ -63,17 +63,17 @@ and you can access the elastic in port 9200, and the kibana in port 5601.
 
 ### Project Structure
 
-- [`seret_main.py`](seret_main.py): The main script that fetches the sitemap, filters the cached sites, and handles each
+- [`seret_main.py`](https://github.com/tal-sitton/Seret-Indexer/blob/master/seret_main.py): The main script that fetches the sitemap, filters the cached sites, and handles each
   site. for seret.co.il
-- [`edb_main.py`](edb_main.py): The main script that fetches all the movies, filters the cached ones, and handles each
+- [`edb_main.py`](https://github.com/tal-sitton/Seret-Indexer/blob/master/edb_main.py): The main script that fetches all the movies, filters the cached ones, and handles each
   site. for edb.co.il
-- [`main.py`](main.py): The main script that runs the seret_main.py and edb_main.py
-- [`db.py`](db.py): Contains the `DB` class for interacting with Elasticsearch.
-- [`movie_model.py`](movie_model.py) and [`site_info_model.py`](site_info_model.py): Pydantic models for Movie and
+- [`main.py`](https://github.com/tal-sitton/Seret-Indexer/blob/master/main.py): The main script that runs the seret_main.py and edb_main.py
+- [`db.py`](https://github.com/tal-sitton/Seret-Indexer/blob/master/db.py): Contains the `DB` class for interacting with Elasticsearch.
+- [`movie_model.py`](https://github.com/tal-sitton/Seret-Indexer/blob/master/movie_model.py) and [`site_info_model.py`](https://github.com/tal-sitton/Seret-Indexer/blob/master/site_info_model.py): Pydantic models for Movie and
   SiteInfo data.
-- [`mappings.py`](mappings.py): Contains the Elasticsearch mapping for the movie data.
-- [`elastic/setup-data.sh`](elastic/setup-data.sh) and [`elastic/dockerfile`](elastic/dockerfile): Setup and Dockerfile
+- [`mappings.py`](https://github.com/tal-sitton/Seret-Indexer/blob/master/mappings.py): Contains the Elasticsearch mapping for the movie data.
+- [`elastic/setup-data.sh`](https://github.com/tal-sitton/Seret-Indexer/blob/master/elastic/setup-data.sh) and [`elastic/dockerfile`](https://github.com/tal-sitton/Seret-Indexer/blob/master/elastic/dockerfile): Setup and Dockerfile
   for the Elasticsearch service.
-- [`.github/workflows/app.yml`](.github/workflows/app.yml): GitHub Actions workflow for running the program, committing
+- [`.github/workflows/app.yml`](https://github.com/tal-sitton/Seret-Indexer/blob/master/.github/workflows/app.yml): GitHub Actions workflow for running the program, committing
   and pushing Docker images,
   and saving logs and sitemap artifacts.
