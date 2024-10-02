@@ -119,6 +119,6 @@ if __name__ == '__main__':
     db.create_index()
     session = requests.Session()
     session.headers = headers
-    if os.environ.get('CI'):  # Only set proxy in CI
-        session.proxies = {'http': "127.0.0.1:8118", 'https': "127.0.0.1:8118"}
+    # if os.environ.get('CI'):  # Only set proxy in CI
+    #     session.proxies = {'http': "127.0.0.1:8118", 'https': "127.0.0.1:8118"}
     main(db, session)
