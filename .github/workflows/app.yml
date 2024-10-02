@@ -62,24 +62,24 @@ jobs:
         env:
           ELASTIC_HOST: http://localhost:9200
 
-      - name: config git
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      # - name: config git
+      #   run: |
+      #     git config --global user.name "github-actions[bot]"
+      #     git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: add elastic-data
-        run: |
-          sudo rm -rf esdata
-          docker stop elasticsearch
-          docker cp elasticsearch:/usr/share/elasticsearch/data esdata
-          find esdata -type f -name '*.lock' -delete
-          zip -r esdata.zip esdata
-          git add esdata.zip
+      # - name: add elastic-data
+      #   run: |
+      #     sudo rm -rf esdata
+      #     docker stop elasticsearch
+      #     docker cp elasticsearch:/usr/share/elasticsearch/data esdata
+      #     find esdata -type f -name '*.lock' -delete
+      #     zip -r esdata.zip esdata
+      #     git add esdata.zip
 
-      - name: commit file and push
-        run: |
-          git commit -m "Update elastic-data"
-          git push
+      # - name: commit file and push
+      #   run: |
+      #     git commit -m "Update elastic-data"
+      #     git push
 
       - name: Log in to the Container registry
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
